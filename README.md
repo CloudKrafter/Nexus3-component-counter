@@ -88,4 +88,20 @@ The JSON file will contain a dictionary -sorted by count number- where each key 
  }
 }
 ```
+
+During execution it will report back to the console after each API call:
+```bash
+Total repositories fetched: 16
+Starting processing repository: repo1-helm-charts
+Found 1 components so far in repo1-helm-charts  (Completed repos: 0/16)
+Completed 1/16: repo1-helm-charts
+Found 7 components so far in repo2-helm-charts  (Completed repos: 1/16)
+Completed 2/16: repo2-helm-charts
+Found 7 components so far in repo3-helm-charts  (Completed repos: 2/16)
+Completed 3/16: repo3-helm-charts
+Found 20 components so far in repo4-helm-charts  (Completed repos: 3/16)
+Found 30 components so far in repo4-helm-charts  (Completed repos: 3/16)
+(...)
+Completed 16/16: repo16-helm-charts
+```
 This file provides a clear and organized view of component counts across your Nexus repositories, useful for auditing, monitoring, and reporting purposes.
